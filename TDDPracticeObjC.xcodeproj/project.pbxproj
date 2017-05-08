@@ -15,6 +15,7 @@
 		A605E4C61EC0EC8300F236EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A605E4C41EC0EC8300F236EC /* LaunchScreen.storyboard */; };
 		A605E4D11EC0EC8300F236EC /* TDDPracticeObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A605E4D01EC0EC8300F236EC /* TDDPracticeObjCTests.m */; };
 		A605E4DC1EC0EC8300F236EC /* TDDPracticeObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A605E4DB1EC0EC8300F236EC /* TDDPracticeObjCUITests.m */; };
+		A605E4EE1EC0EF2700F236EC /* RSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A605E4ED1EC0EF2700F236EC /* RSAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A605E4D71EC0EC8300F236EC /* TDDPracticeObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPracticeObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A605E4DB1EC0EC8300F236EC /* TDDPracticeObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDPracticeObjCUITests.m; sourceTree = "<group>"; };
 		A605E4DD1EC0EC8300F236EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A605E4EC1EC0EF2700F236EC /* RSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSAddition.h; path = TDDPracticeObjCTests/RSAddition.h; sourceTree = SOURCE_ROOT; };
+		A605E4ED1EC0EF2700F236EC /* RSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSAddition.m; path = TDDPracticeObjCTests/RSAddition.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				A605E4BA1EC0EC8300F236EC /* AppDelegate.m */,
 				A605E4BC1EC0EC8300F236EC /* ViewController.h */,
 				A605E4BD1EC0EC8300F236EC /* ViewController.m */,
+				A605E4EC1EC0EF2700F236EC /* RSAddition.h */,
+				A605E4ED1EC0EF2700F236EC /* RSAddition.m */,
 				A605E4BF1EC0EC8300F236EC /* Main.storyboard */,
 				A605E4C21EC0EC8300F236EC /* Assets.xcassets */,
 				A605E4C41EC0EC8300F236EC /* LaunchScreen.storyboard */,
@@ -283,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A605E4EE1EC0EF2700F236EC /* RSAddition.m in Sources */,
 				A605E4D11EC0EC8300F236EC /* TDDPracticeObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

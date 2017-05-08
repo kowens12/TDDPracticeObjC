@@ -7,16 +7,20 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "RSAddition.h"
 
 @interface TDDPracticeObjCTests : XCTestCase
 
 @end
 
 @implementation TDDPracticeObjCTests
+{
+    RSAddition *addition;
+}
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    addition = [[RSAddition alloc] init];
 }
 
 - (void)tearDown {
@@ -24,16 +28,20 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testAdditionClassExists {
+    XCTAssertNotNil(addition, @"RSAddition class exists");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testAddTwoPlusTwo {
+    NSInteger result = [addition addNumberOne:2 withNumberTwo:2];
+    
+    XCTAssertEqual(result, 4, @"Addition of 2 + 2 is 4");
+}
+
+- (void)testTwoPlusSeven {
+    NSInteger result = [addition addNumberOne:2 withNumberTwo:7];
+    
+    XCTAssertEqual(result, 9, @"Addition of 2 + 7 is 9");
 }
 
 @end
